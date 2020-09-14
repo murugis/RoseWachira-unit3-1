@@ -50,7 +50,7 @@ class Product():
             print("BABOOM!!!") 
 
 class BoxingGlove(Product):
-    def __init__(self,name,price=10,weight=1go0,flammability=0.5,identifier=random.randrange(1000000,9999999)):
+    def __init__(self,name,price=10,weight=10,flammability=0.5,identifier=random.randrange(1000000,9999999)):
         super().__init__(name, price,weight,flammability,identifier)
         self.weight= weight
 
