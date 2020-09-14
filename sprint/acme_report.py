@@ -10,6 +10,9 @@ NOUNS = ['Anvil', 'Catapult', 'Disguise', 'Mousetrap', '???']
 
 
 def generate_products(num_products=30):
+    '''
+    The function generates 30 random products and them as a list[]
+    '''
     products = []
     for products in range(num_products=30):
         adjective = sample(ADJECTIVES,1)[0]
@@ -31,38 +34,35 @@ def generate_products(num_products=30):
 
 
 def inventory_report(products):
-    name_1 = []
-    price_1 = []
-    weight_1= []
-    flammability_1 = []
-
-    for product in products:
-        name_1.append(products.name)
-        price_1.append(products.price)
-        weight_1.append(products.weight)
-        flammability_1.append(products.flammability)
+    '''
+    This function generates an invetory report of the products.
+    returns:
+    unique product names 
+    average mean
+    average weight
+    average flammability
+    '''
+    name_1 = [products.name]
+    price_1 = [products.price]
+    weight_1= [products.weight]
+    flammability_1 = [products.flammability]
     
-    uname = []
-
-   
+    print(len(name_1))
+    print(sum(price_1)/len(price_1))
+    print(sum(weight_1)/len(weight_1))
+    print(sum(flammability_1)/len(flammability_1))
 
     
-    uname = len(name_1)
-    avg_p = sum(price_1)/len(price_1)
-    avg_w = sum(weight_1)/len(weight_1)
-    avg_f = sum(flammability_1)/len(flammability_1)
-
-        
 
 if __name__ == "__main__":
     inventory_report(generate_products())
     
     
     print('ACME CORPORATION OFFICIAL INVENTORY REPORT')
-    uname.inventory_report()
-    print(f'Unique product names: {uname}')
-    avg_p.inventory_report()
-    print(f'Average price: {avg_p}')
-    print(f'Average weight: {avg_w}')
-    print(f'Average flammability: {avg_f}')
+    
+    print(f'Unique product names: ')
+    
+    print(f'Average price: ')
+    print(f'Average weight: ')
+    print(f'Average flammability: ')
     
