@@ -12,7 +12,6 @@ class Product():
     def stealability(self):
         '''
         This calculates the price of the Product divided by the weight
-
         returns a message:
         if the ratio is less than 0.5 return "Not so stealable...",
         if it is greater or equal to 0.5 but less than 1.0
@@ -62,7 +61,6 @@ class BoxingGlove(Product):
         '''
         This is a function that calculates the flammability times the weight, and then
         returns a message:
-
         if the product is less than 10 return "...fizzle.",
         if it is  greater or equal to 10 but less than 50
         return "...boom!", and otherwise
@@ -76,11 +74,3 @@ class BoxingGlove(Product):
             print("Hey that hurts!")
         else:
             print("OUCH!!!")
-
-     
-
-
-        
-
-
-    

@@ -13,12 +13,12 @@ class AcmeProductTests(unittest.TestCase):
     def test_default_product_weight(self):
         """Test default product price being 10."""
         prod = Product('Test Product')
-        self.assertEqual(prod.weight, 10)
+        self.assertEqual(prod.weight, 20)
 
     def test_default_product_identifier(self):
         """Test default product price being 10."""
         prod = Product('Test Product')
-        self.assertEqual(prod.identifier, 3538923)
+        self.assertEqual(prod.identifier,4504056)
 
 
 if __name__ == '__main__':
